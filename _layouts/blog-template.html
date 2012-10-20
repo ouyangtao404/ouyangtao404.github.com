@@ -6,8 +6,8 @@
 <!--[if gt IE 9]><html class="no-js"><![endif]-->
 <!--[if !IE]><!--><html><!--<![endif]-->
 <head>
-	    <meta charset="gbk">
-    <title>淘宝Html5模板</title>
+	<meta charset="gbk">
+    <title>{{ page.title }}</title>
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <!-- 响应式设计代码 -->
@@ -36,26 +36,32 @@
 			<div class="topBar">
 				<div class="topBarContainer clearfix">
 					<nav class="nav leftCol">
-						<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-21"><a title="home" href="http://www.rankber.com/">Home</a></li>
-<li id="menu-item-15" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-15"><a href="http://www.rankber.com/category/front-end">Front-end</a>
-<ul class="sub-menu">
-	<li id="menu-item-24" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24"><a href="http://www.rankber.com/category/javascript">JavaScript</a></li>
-	<li id="menu-item-23" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23"><a href="http://www.rankber.com/category/htmlcss">HTML/CSS</a></li>
-</ul>
-</li>
-<li id="menu-item-90" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-90"><a href="http://www.rankber.com/category/my-left">my-left</a></li>
-<li id="menu-item-102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-102"><a href="http://www.rankber.com/works">Works</a></li>
-<li id="menu-item-17" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-17"><a title="other" href="http://www.rankber.com/category/other">Other</a>
-<ul class="sub-menu">
-	<li id="menu-item-18" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18"><a title="wordpress" href="http://www.rankber.com/category/wordpress">WordPress</a></li>
-	<li id="menu-item-16" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-16"><a title="linux" href="http://www.rankber.com/category/linux">Linux</a></li>
-</ul>
-</li>
-<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a title="link" href="http://www.rankber.com/link">Link</a></li>
-<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a title="about" href="http://www.rankber.com/a-bout">About</a></li>
-</ul></div>					</nav>
+						<div class="menu-menu-container">
+							<ul id="menu-menu" class="menu">
+								<li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-21"><a title="home" href="http://ouyangtao404.github.com/">Home</a></li>
+								<!--
+								<li id="menu-item-15" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-15"><a href="http://ouyangtao404.github.com/category/front-end">Front-end</a>
+									<ul class="sub-menu">
+										<li id="menu-item-24" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24"><a href="http://ouyangtao404.github.com/category/javascript">JavaScript</a></li>
+										<li id="menu-item-23" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-23"><a href="http://ouyangtao404.github.com/category/htmlcss">HTML/CSS</a></li>
+									</ul>
+								</li>
+								<li id="menu-item-90" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-90"><a href="http://ouyangtao404.github.com/category/my-left">my-left</a></li>
+								<li id="menu-item-102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-102"><a href="http://ouyangtao404.github.com/works">Works</a></li>
+								<li id="menu-item-17" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-17"><a title="other" href="http://ouyangtao404.github.com/category/other">Other</a>
+									<ul class="sub-menu">
+										<li id="menu-item-18" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18"><a title="wordpress" href="http://ouyangtao404.github.com/category/wordpress">WordPress</a></li>
+										<li id="menu-item-16" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-16"><a title="linux" href="http://ouyangtao404.github.com/category/linux">Linux</a></li>
+									</ul>
+								</li>
+								<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a title="link" href="http://ouyangtao404.github.com/link">Link</a></li>
+								<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a title="about" href="http://ouyangtao404.github.com/a-bout">About</a></li>
+								-->
+							</ul>
+						</div>
+					</nav>
 
-					<form id="searchform" class="rightCol" method="get" action="http://www.rankber.com">
+					<form id="searchform" class="rightCol" method="get" action="http://ouyangtao404.github.com">
 						<input type="text" name="s" id="search" class="search" placeholder="search..." value="" />
 						<input id="search_submit" class="submit" name="search_submit" type="submit" value="Go" title="Submit" style="display:none;" />
 					</form>
@@ -92,10 +98,10 @@
 							<a class="shareItem" href="javascript:void(0)" title="转播到新浪微博" rel="nofollow" onclick="sinaWeibo();return false;">Weibo</a>
 							<a href="javascript:void(0)" rel="nofollow" onclick="txWeibo();return false;" class="shareItem" title="转播到腾讯微博">t.qq</a>
 						</span>
-						<span class="rightCol metaCategory">Categories: <a href="http://www.rankber.com/category/front-end" title="查看 Front-end 中的全部文章" rel="category tag">Front-end</a>, <a href="http://www.rankber.com/category/linux" title="查看 linux 中的全部文章" rel="category tag">linux</a>, <a href="http://www.rankber.com/category/other" title="查看 other 中的全部文章" rel="category tag">other</a></span>
+						<span class="rightCol metaCategory">Categories: <a href="http://ouyangtao404.github.com/category/front-end" title="查看 Front-end 中的全部文章" rel="category tag">Front-end</a>, <a href="http://ouyangtao404.github.com/category/linux" title="查看 linux 中的全部文章" rel="category tag">linux</a>, <a href="http://ouyangtao404.github.com/category/other" title="查看 other 中的全部文章" rel="category tag">other</a></span>
 					</p>
 					<p class="clearfix">
-						<span class="leftCol metaTags">Tags: <a href="http://www.rankber.com/tag/git" rel="tag">git</a> , <a href="http://www.rankber.com/tag/github" rel="tag">github</a> , <a href="http://www.rankber.com/tag/jekyll" rel="tag">jekyll</a></span>
+						<span class="leftCol metaTags">Tags: <a href="http://ouyangtao404.github.com/tag/git" rel="tag">git</a> , <a href="http://ouyangtao404.github.com/tag/github" rel="tag">github</a> , <a href="http://ouyangtao404.github.com/tag/jekyll" rel="tag">jekyll</a></span>
 											</p>
 				</footer>
 			</div><!-- post container end -->
@@ -113,7 +119,7 @@
 			<div id="cancel-comment-reply" class="cancel-comment-reply">
 				<small><a rel="nofollow" id="cancel-comment-reply-link" href="/github-page-jekyll.html#respond" style="display:none;">点击这里取消回复。</a></small>
 			</div>
-						<form action="http://www.rankber.com/wp-comments-post.php" method="post" id="commentform" class="commentform">
+						<form action="http://ouyangtao404.github.com/wp-comments-post.php" method="post" id="commentform" class="commentform">
 								<div id="user_info" class="user_info">
 					<p>
 						<input type="text" name="author" class="user_name input" id="author" value="" size="22" tabindex="1" required placeholder="Name(required)" />
@@ -144,7 +150,7 @@
 </div>
 <footer class="theFooter clearfix singleFooter">
 
-	<p class="copyright"><a href="http://www.rankber.com/feed" title="RSS">RSS</a> | Theme <a class="themeName" href="http://www.rankber.com/" title="Optimus+">optimus+</a> design by <a href="http://jamiebicknell.tumblr.com/" rel="nofollow" title="J.Bicknell">J.Bicknell</a>|<script src="http://s94.cnzz.com/stat.php?id=4105057&web_id=4105057" language="JavaScript"></script></p>
+	<p class="copyright"><a href="http://ouyangtao404.github.com/feed" title="RSS">RSS</a> | Theme <a class="themeName" href="http://ouyangtao404.github.com/" title="Optimus+">optimus+</a> design by <a href="http://jamiebicknell.tumblr.com/" rel="nofollow" title="J.Bicknell">J.Bicknell</a>|<script src="http://s94.cnzz.com/stat.php?id=4105057&web_id=4105057" language="JavaScript"></script></p>
 
 </footer>
 </body>
