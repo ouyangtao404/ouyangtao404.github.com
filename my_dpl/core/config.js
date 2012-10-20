@@ -1,5 +1,5 @@
 (function() {
-    var __widgetspath = "../";
+    var __widgetspath = "../../";
     KISSY.config({
         packages: [{
             name : 'widgets',
