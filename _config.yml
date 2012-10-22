@@ -1,1 +1,3 @@
 baseurl: /..
+githubHost: http://localhost:4000
+localHost: http://ouyangtao404.github.com/
