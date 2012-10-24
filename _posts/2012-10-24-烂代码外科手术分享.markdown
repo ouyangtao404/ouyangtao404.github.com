@@ -1,6 +1,7 @@
 ---
 layout: blog-template
 title: 烂代码外科手术分享
+guid: urn:uuid:f47c5329-afdf-4667-bc61-307da0c0b76d
 ---
 
 #烂代码外科手术分享
