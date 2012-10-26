@@ -45,3 +45,5 @@ title: 正则表达式系统教程
 	两个问号老规矩，0次1次团团转；
 	花括号后跟个？，贪婪变成不贪婪；
 	还有很多装不下，等着以后来增加
+	
+转自：[http://blog.sina.com.cn/s/blog_79988a1301018ril.html](http://blog.sina.com.cn/s/blog_79988a1301018ril.html)
