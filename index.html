@@ -1,18 +1,29 @@
 ---
 layout: default
-title: my blog
+title: ouyangtao的博客
 ---
 
-<h2>{{ page.title }}</h2>
-
-<p>我是首页</p>
-
-<ul>
-
 {% for post in site.posts %}
-
-<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-
+<article>
+	<div class="feature-image">
+		{% if(post.cover) %}
+		<a href="single.html" ><img src="{{ post.cover }}" style="width:560px;height:300px;"/></a>
+		{% endif %}
+		<div class="entry-date"><div class="month"></div><div class="number">23</div></div>
+	</div>
+	<div class="excerpt">
+		<a href="{{ site.baseurl }}{{ post.url }}" class="post-heading" >{{ post.title }}</a>
+		<p>
+		<span>{{ post.date | date_to_long_string }}</span><br/>
+		{{ post.summary }}
+		</p>
+	</div>
+	<!-- <div class="meta">
+		<span class="user"><a href="#">发布人</a></span>
+		<span class="comments">16 comments</span>
+		<span class="tags"><a href="#">red</a>, <a href="#">cyan</a>, <a href="#">white</a>, <a href="#">blue</a></span>
+	</div>
+	 -->
+	 <i class="tape"></i>
+</article>
 {% endfor %}
-
-</ul>
