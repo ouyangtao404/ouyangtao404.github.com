@@ -9,12 +9,11 @@ title: ouyangtao的博客
 		{% if(post.cover) %}
 		<a href="single.html" ><img src="{{ post.cover }}" style="width:560px;height:300px;"/></a>
 		{% endif %}
-		<div class="entry-date"><div class="month"></div><div class="number">23</div></div>
+		<div class="entry-date">{{ post.date | date_to_long_string }}</div>
 	</div>
 	<div class="excerpt">
 		<a href="{{ site.baseurl }}{{ post.url }}" class="post-heading" >{{ post.title }}</a>
 		<p>
-		<span>{{ post.date | date_to_long_string }}</span><br/>
 		{{ post.summary }}
 		</p>
 	</div>
