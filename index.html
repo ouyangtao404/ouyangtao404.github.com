@@ -9,7 +9,7 @@ title: 坚强的水手
 		{% if(post.cover) %}
 		<a href="single.html" ><img src="{{ post.cover }}" style="width:560px;height:300px;"/></a>
 		{% endif %}
-		<div class="entry-date">{{ post.date | date_to_long_string }}</div>
+		<div class="entry-date">{{ post.date | date_to_string }}</div>
 	</div>
 	<div class="excerpt">
 		<a href="{{ site.baseurl }}{{ post.url }}" class="post-heading" >{{ post.title }}</a>
