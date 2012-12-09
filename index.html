@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 坚强的水手
+title: 首页
 ---
 
 {% for post in site.posts %}
@@ -13,16 +13,9 @@ title: 坚强的水手
 	</div>
 	<div class="excerpt">
 		<a href="{{ site.baseurl }}{{ post.url }}" class="post-heading" >{{ post.title }}</a>
-		<p>
-		{{ post.summary }}
-		</p>
+		<a href="{{ site.baseurl }}{{ post.url }}#disqus_thread">评论数加载中...</a>
+		<p>{{ post.summary }}</p>
 	</div>
-	<!-- <div class="meta">
-		<span class="user"><a href="#">发布人</a></span>
-		<span class="comments">16 comments</span>
-		<span class="tags"><a href="#">red</a>, <a href="#">cyan</a>, <a href="#">white</a>, <a href="#">blue</a></span>
-	</div>
-	 -->
-	 <i class="tape"></i>
+	<i class="tape"></i>
 </article>
 {% endfor %}
