@@ -1,5 +1,12 @@
 baseurl: ''
 githubHost: http://localhost:4000
 localHost: http://ouyangtao404.github.com/
-permalink: /:month-:day-:year/:title.html
 markdown: rdiscount
+url:  http://ouyangtao404.github.com                 # 博客地址
+
+title: 欧阳涛的博客                                                   # 博客标题 
+subtitle:  平凡的坚持  # 副标题 
+author:    欧阳涛     # 作者 
+simple_search:  http://www.google.com.hk/search     # 搜索引擎 
+description:                                                            # 关于博客的描述 
+permalink: /blog/:year/:month/:day/:title           # 文章的固定链接形式
