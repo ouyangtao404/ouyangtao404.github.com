@@ -13,21 +13,22 @@
     <!-- 响应式设计代码 -->
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="shortcut icon" type="image/x-icon" href="../img/ouyangtao.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/img/ouyangtao.ico" />
     <!-- html5reset and css3 -->
     <link rel="stylesheet" href="http://a.tbcdn.cn/??p/global/1.0/global-min.css,app/dp/s/html5/css/common-min.css"/>
     <!--[if lt IE 9]><script src="http://a.tbcdn.cn/app/dp/s/html5/js/??html5shiv-min.js,modernizr-v2.5.3-min.js"></script><![endif]-->
     <!--[if gte IE 9]><!--><script src="http://a.tbcdn.cn/app/dp/s/html5/js/modernizr-v2.5.3-min.js"></script><!--<![endif]-->
     <script src="http://a.tbcdn.cn/??s/kissy/1.2.0/kissy-min.js,p/global/1.0/global-min.js,p/et/et.js?t=2012011120110301.js" type="text/javascript"></script>
-	<!--<![endif]-->
 	<!--代码高亮-->
 	<link   href="/mods/core/default.css" type="text/css" rel="stylesheet" />
 	<link   href="/mods/code-high-light/prettify.css" type="text/css" rel="stylesheet" />
     <script  src="/mods/code-high-light/prettify.js" type="text/javascript"></script>
-    
+
+	<!--<![endif]-->
+
 </head>
 
-<body>
+<body onload="prettyPrint()">
 	<!-- HEADER -->
 	<header>
 		
@@ -44,7 +45,9 @@
 		<nav class="cf">
 			<div class="wrapper cf">
 				<ul id="nav" class="sf-menu">
-					<li><a href="/index.html">HOME<i><b></b></i></a></li>
+					<li><a href="/">HOME<i><b></b></i></a></li>
+					<li><a href="/blog/list.html">LIST<i><b></b></i></a></li>
+					<li><a target="_blank" href="http://weibo.com/ouyangtao1989">WEIBO<i><b></b></i></a></li>
 				</ul>
 				<div id="combo-holder"></div>
 			</div>
@@ -53,6 +56,7 @@
 			
 	</header>
 	<!-- ENDS HEADER -->
+<!--head end-->
 	
 	
 	<!-- MAIN -->
@@ -149,36 +153,35 @@
 			<!-- ENDS posts list -->			
 			
 			<!-- sidebar -->
-        	<aside id="sidebar">
-        		
-        		<ul>
-	        		<li class="block" style="">
-		        		<h4 class="heading">blog information</h4>
-		        		<span>博客字数：115</span><br/>
-						<span>最后更新时间：09 December 2012</span><br/>
-	        		</li>
-	        		<!--
-	        		<li class="block" style="">
-		        		<h4 class="heading">Categories</h4>
-						<ul>
-							
-							<li class="cat-item"><a href="#" title="title">Habitant morbi<span class="post-counter"> (2)</span></a></li>
-						
-						</ul>
-	        		</li>
-	        		-->
-	        		
-        		
-        		</ul>
-        		
-        	</aside>
-			<!-- ENDS sidebar -->
+<aside id="sidebar">
+	
+	<ul>
+		<li class="block" style="">
+    		<h4 class="heading">blog information</h4>
+    		<span>博客字数：115</span><br/>
+			<span>最后更新时间：10 December 2012</span><br/>
+		</li>
+		<!--
+		<li class="block" style="">
+    		<h4 class="heading">Categories</h4>
+			<ul>
+				
+				<li class="cat-item"><a href="#" title="title">Habitant morbi<span class="post-counter"> (2)</span></a></li>
+			
+			</ul>
+		</li>
+		-->
+		
+	
+	</ul>
+	
+</aside>
+<!-- ENDS sidebar -->
 	  
 	  </div>
 	</div>
 	<!-- ENDS MAIN -->
-	
-	
+
 	<footer>
 	
 		<!-- wrapper -->
@@ -189,9 +192,9 @@
 			<div class="sb-holder cf">
 				<ul id="social-bar" class="cf">
 					<li class="left-corner"><i></i></li>
-					<li><a href="http://www.facebook.com"  title="Become a fan" ><img src="../img/social/Facebook.png"  alt="Facebook" /></a></li>
-					<li><a href="http://www.twitter.com" title="Follow my tweets" ><img src="../img/social/Twitter.png"  alt="twitter" /></a></li>
-					<li><a href="http://www.google.com"  title="Add to the circle" ><img src="../img/social/Google+.png" alt="Google plus" /></a></li>
+					<li><a href="http://www.facebook.com"  title="Become a fan" ><img src="/img/social/Facebook.png"  alt="Facebook" /></a></li>
+					<li><a href="http://www.twitter.com" title="Follow my tweets" ><img src="/img/social/Twitter.png"  alt="twitter" /></a></li>
+					<li><a href="http://www.google.com"  title="Add to the circle" ><img src="/img/social/Google+.png" alt="Google plus" /></a></li>
 					<li class="right-corner"><i></i></li>
 				</ul>
 				
@@ -202,32 +205,10 @@
 			<div id="footer-bottom" style="display:none;">ouyangtao.github.com</div>
 		
 		</div><!-- ENDS wrapper -->
-		
-		
-		
-
 	</footer>
-
-
 	<!-- JavaScript at the bottom for fast page loading -->
 	
 	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	
-	<!--评论数显示相关js-->
-    <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'ouyangtao404'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-    </script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
 </body>
-
 </html>
-

@@ -1,23 +1,21 @@
 {% include head.php %}
-<!--head end-->
-	
+<!--head end-->	
 	
 	<!-- MAIN -->
-	<div role="main" id="main">
+	<div role="main" id="main" class="blog-list">
 		<div class="wrapper cf">
 		
 			
 			
 			<!-- posts list -->
 			<div id="posts-list" class="cf"> 
-				<!--内容 start-->
+				
 				{{ content }}
-				<!--内容 end-->
 				
 				<!-- page-navigation -->
 				<div class="page-navigation cf">
-					<div class="nav-next"><a href="{{ next }}">Older Entries</a></div>
-					<div class="nav-previous"><a href="{{ previous }}">Newer Entries</a></div>
+					<div class="nav-next"><a href="">Older Entries</a></div>
+					<div class="nav-previous"><a href="">Newer Entries</a></div>
 				</div>
 				<!--ENDS page-navigation -->
 					
@@ -32,3 +30,4 @@
 	<!-- ENDS MAIN -->
 
 {% include foot.php %}
+

@@ -1,4 +1,37 @@
 /**
+ * 	博客list页面样式
+ */
+.blog-list .atc-list a{
+	height:20px;
+	line-height:20px;
+	padding:0 5px;
+	margin-bottom:3px;
+}
+.blog-list .atc-list .title{
+	width:70%;
+	float:left;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+}
+.blog-list .atc-list .date{
+	padding-left:10px;
+	float:right;
+}
+
+.blog-list a {
+	color:#a83e2a;
+	-webkit-transition: color 0.1s ease-in,background 0.1s ease-out;
+    -moz-transition:    color 0.1s ease-in,background 0.1s ease-out;
+    -o-transition:      color 0.1s ease-in,background 0.1s ease-out;
+    transition:        	color 0.1s ease-in,background 0.1s ease-out;
+}
+.blog-list a:hover {
+	color:#fff;
+	background:#a83e2a;
+	text-decoration:none;
+}
+/**
  * 	博客的默认样式
  *  这里针对代码部分
  */

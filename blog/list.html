@@ -1,0 +1,17 @@
+---
+layout: list-template
+title: 首页
+---
+
+<article>
+	<ul class="atc-list">
+	{% for post in site.posts %}
+	<li class="atc-one">
+		<a class="clearfix" href="{{ site.baseurl }}{{ post.url }}">
+			<span class="title">{{ post.title }}</span>
+			<span class="date">{{ post.date | date_to_string }}</span>
+		</a>
+	</li>
+	{% endfor %}
+	</ul>
+</article>
