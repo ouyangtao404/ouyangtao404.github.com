@@ -15,7 +15,9 @@
 						{% if(page.cover) %}
 						<a href="javascript:void(0);" ><img src="{{ page.cover }}" style="width:560px;"/></a>
 						{% endif %}
+						{% if(page.date) %}
 						<div class="entry-date">{{ page.date | date_to_string }}</div>
+						{% endif %}
 					</div>
 					<div class="excerpt">
 						<h1>{{ page.title }}</h1>
