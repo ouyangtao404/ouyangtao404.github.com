@@ -47,7 +47,7 @@
 				<ul id="nav" class="sf-menu">
 					<li><a href="/">HOME<i><b></b></i></a></li>
 					<li><a href="/blog/list.html">LIST<i><b></b></i></a></li>
-					<li><a target="_blank" href="http://weibo.com/ouyangtao1989">WEIBO<i><b></b></i></a></li>
+					<li><a href="/blog/2012/12/10/about-me">AOUT ME<i><b></b></i></a></li>
 				</ul>
 				<div id="combo-holder"></div>
 			</div>
