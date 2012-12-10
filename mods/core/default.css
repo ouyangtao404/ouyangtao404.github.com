@@ -37,7 +37,7 @@
 }
 
 #posts-list article.comment .comment,
-.blog-list a {
+.blog-list .atc-list a {
 	color:#a83e2a;
 	-webkit-transition: color 0.1s ease-in,background 0.1s ease-out;
     -moz-transition:    color 0.1s ease-in,background 0.1s ease-out;
@@ -45,7 +45,7 @@
     transition:        	color 0.1s ease-in,background 0.1s ease-out;
 }
 #posts-list article.comment .comment:hover,
-.blog-list a:hover {
+.blog-list .atc-list a:hover {
 	color:#fff;
 	background:#a83e2a;
 	text-decoration:none;
