@@ -22,13 +22,13 @@ title: 首页
 <article>
 	<div class="feature-image">
 		{% if(post.cover) %}
-		<a href="single.html" ><img src="{{ post.cover }}" style="width:560px;height:300px;"/></a>
+		<a href="{{ site.baseurl }}{{ post.url }}" ><img src="{{ post.cover }}" style="width:560px;height:300px;"/></a>
 		{% endif %}
 		<div class="entry-date">{{ post.date | date_to_string }}</div>
 	</div>
 	<div class="excerpt">
 		<a href="{{ site.baseurl }}{{ post.url }}" class="post-heading" >{{ post.title }}</a>
-		<a href="{{ site.baseurl }}{{ post.url }}#disqus_thread">评论数加载中...</a>
+		<a class="comment-num" href="{{ site.baseurl }}{{ post.url }}#disqus_thread">评论数加载中...</a>
 		<p>{{ post.summary }}</p>
 		 
 	</div>

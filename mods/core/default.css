@@ -1,4 +1,24 @@
 /**
+ * 	a链接的统一样式
+ */
+.comment-num,
+#posts-list article.comment .comment,
+.blog-list .atc-list a {
+	color:#a83e2a;
+	-webkit-transition: color 0.1s ease-in,background 0.1s ease-out;
+    -moz-transition:    color 0.1s ease-in,background 0.1s ease-out;
+    -o-transition:      color 0.1s ease-in,background 0.1s ease-out;
+    transition:        	color 0.1s ease-in,background 0.1s ease-out;
+}
+.comment-num:hover,
+#posts-list article.comment .comment:hover,
+.blog-list .atc-list a:hover {
+	color:#fff;
+	background:#a83e2a;
+	text-decoration:none;
+}
+
+/**
  * 	分享交互部分
  */
 .blog-share{
@@ -36,20 +56,6 @@
 	float:right;
 }
 
-#posts-list article.comment .comment,
-.blog-list .atc-list a {
-	color:#a83e2a;
-	-webkit-transition: color 0.1s ease-in,background 0.1s ease-out;
-    -moz-transition:    color 0.1s ease-in,background 0.1s ease-out;
-    -o-transition:      color 0.1s ease-in,background 0.1s ease-out;
-    transition:        	color 0.1s ease-in,background 0.1s ease-out;
-}
-#posts-list article.comment .comment:hover,
-.blog-list .atc-list a:hover {
-	color:#fff;
-	background:#a83e2a;
-	text-decoration:none;
-}
 /**
  * 	博客的默认样式
  *  这里针对代码部分
@@ -742,22 +748,22 @@ body p {
     line-height: 1.3em;
 }
 h1 {
-    font-size: 48px;
-}
-h2 {
-    font-size: 36px;
-}
-h3 {
     font-size: 30px;
 }
-h4 {
+h2 {
     font-size: 24px;
+}
+h3 {
+    font-size: 22px;
+}
+h4 {
+    font-size: 20px;
 }
 h5 {
     font-size: 18px;
 }
 h6 {
-    font-size: 14px;
+    font-size: 16px;
 }
 header {
     background: url("/img/header.png") repeat scroll 0 0 transparent;
@@ -1125,7 +1131,6 @@ nav {
     transition: all 0.3s ease 0s;
 }
 #main .page-navigation .unable{
-	color:#ccc;
 }
 #main .page-navigation .page_number{
 	width:75px;

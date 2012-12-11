@@ -11,4 +11,4 @@ description:                                                            # 关于
 permalink: /blog/:year/:month/:day/:title           # 文章的固定链接形式
 
 markdown: rdiscount
-paginate: 2
+paginate: 5
