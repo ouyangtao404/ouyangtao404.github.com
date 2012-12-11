@@ -1,29 +1,32 @@
-<div id="pagination">
-	<div class="pagenavi">
-		<span class="page_number">第{{paginator.page}}页/共{{paginator.total_pages}}页</span>
-		<a href="/">第一页</a>
-		{% if paginator.previous_page %}
-		{% if paginator.previous_page == 1 %}
-		<a href="/" class="current"><<前一页</a>
-		{% else %}
-		<a href="/page{{paginator.previous_page}}"><<前一页</a>
-		{% endif %}
-		{% else %}
-		<span><<前一页</span>
-		{% endif %}
-		{% for count in (2..paginator.total_pages) limit:8 %}
-		{% if count == paginator.page %}
-		<span class="current-page">{{count}}</span>
-		{% else %}
-		<a href="/page{{count}}">{{count}}</a>
-		{% endif %}
-		{% endfor %}
-		
-		{% if paginator.next_page %}
-		<a href="/page{{paginator.next_page}}">后一页>></a>
-		{% else %}
-		<span>后一页>></span>
-		{% endif %}
-		<a href="/page{{paginator.total_pages}}">最后一页</a>
-	</div>
+
+<!-- Pagination links -->
+<!-- <div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="/page{{paginator.previous_page}}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
+  {% if paginator.next_page %}
+    <a href="/page{{paginator.next_page}}" class="next ">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div> -->
+
+<!-- page-navigation -->
+<div class="page-navigation cf">
+	{% if paginator.previous_page %}
+    <div class="nav-next"><a href="/page{{paginator.previous_page}}">Previous</a></div>
+    {% else %}
+    <div class="nav-next"><a href="javascript:void(0);" class="unable">Previous</a></div>
+    {% endif %}
+	<span class="page_number ">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
+	{% if paginator.next_page %}
+    <div class="nav-previous"><a href="/page{{paginator.next_page}}">Next</a></div>
+  	{% else %}
+	<div class="nav-previous"><a href="javascript:void(0);" class="unable">Next</a></div>
+  	{% endif %}
+	
 </div>
+<!--ENDS page-navigation -->

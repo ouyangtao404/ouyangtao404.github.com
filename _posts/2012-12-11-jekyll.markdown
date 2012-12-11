@@ -1,0 +1,10 @@
+---
+layout: blog-template
+title: jekyll搭建个人博客的记录
+cover: 
+summary: 在搭建过程中一些记录
+---
+
+###给jekyll模板添加分页功能
+-- 只能在index.html生效，这点不大好
+[给jekyll模板添加分页功能](https://github.com/mojombo/jekyll/wiki/Pagination)

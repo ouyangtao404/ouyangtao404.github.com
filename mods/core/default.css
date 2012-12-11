@@ -1117,11 +1117,23 @@ nav {
     display: inline-block;
     margin-bottom: 15px;
 }
+#main .page-navigation .unable,
 #main .page-navigation a {
     color: #CB5432;
     display: block;
     padding: 10px 15px;
     transition: all 0.3s ease 0s;
+}
+#main .page-navigation .unable{
+	color:#ccc;
+}
+#main .page-navigation .page_number{
+	width:75px;
+	height:30px;
+	float:left;
+	position: relative;
+    right: 50%;
+    top: 10px;
 }
 #main .page-navigation .nav-next {
     background: url("/img/arrow-left.png") no-repeat scroll left 12px #F3E4C8;
