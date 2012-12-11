@@ -10,3 +10,5 @@ author:    欧阳涛     # 作者
 simple_search:  http://www.google.com.hk/search     # 搜索引擎 
 description:                                                            # 关于博客的描述 
 permalink: /blog/:year/:month/:day/:title           # 文章的固定链接形式
+
+paginate: 2

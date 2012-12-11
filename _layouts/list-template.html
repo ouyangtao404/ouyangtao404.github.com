@@ -13,13 +13,15 @@
 				{{ content }}
 				
 				<!-- page-navigation -->
-				<div class="page-navigation cf">
+				<div class="page-navigation cf" style="display:none;">
 					<div class="nav-next"><a href="">Older Entries</a></div>
 					<div class="nav-previous"><a href="">Newer Entries</a></div>
 				</div>
 				<!--ENDS page-navigation -->
-					
-						
+				
+				<!--页码-->
+				{% include paginate.php %}
+				
 		    </div>
 			<!-- ENDS posts list -->			
 			

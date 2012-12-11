@@ -47,7 +47,7 @@
 				<ul id="nav" class="sf-menu">
 					<li><a href="/">HOME<i><b></b></i></a></li>
 					<li><a href="/blog/list.html">LIST<i><b></b></i></a></li>
-					<li><a href="/blog/about-me.html">AOUT ME<i><b></b></i></a></li>
+					<li><a href="/blog/about-me.html">ABOUT ME<i><b></b></i></a></li>
 				</ul>
 				<div id="combo-holder"></div>
 			</div>
