@@ -1,4 +1,5 @@
-{% comment %}<!--
+{% comment %}
+<!--
 The tags_list include is a listing helper for tags.
 Usage:
   1) assign the 'tags_list' variable to a valid array of tags.
@@ -6,7 +7,7 @@ Usage:
   example:
     <ul>
    {% assign tags_list = site.tags %}
-   {% include JB/tags_list %}
+   {% include sort/tags %}
    </ul>
   
   Notes:
@@ -15,15 +16,18 @@ Usage:
     site.tags is a Hash while page.tags is an array.
     
   This helper can be seen in use at: ../_layouts/default.html
--->{% endcomment %}
-
-{% if tags_list.first[0] == null %}
+-->
+{% endcomment %}
 	{% for tag in tags_list %}
-    	<li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }} <span>{{ site.tags[tag].size }}</span></a></li>
+		<li class="cat-item">
+			<a title="title" href="{{ BASE_PATH }}{{ site.sort.tags }}#{{ tag[0] }}-ref">
+				{{ tag[0] }}
+				{% if(from_side_bar) %}
+				<span class="post-counter">({{ tag[1].size }})</span>
+				{% else %}
+				<span class="post-counter"> {{ tag[1].size }} </span>
+				{% endif %}
+			</a>
+		</li>
 	{% endfor %}
-{% else %}
-	{% for tag in tags_list %}
-		<li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}-ref">{{ tag[0] }} <span>{{ tag[1].size }}</span></a></li>
-	{% endfor %}
-{% endif %}
 {% assign tags_list = nil %}

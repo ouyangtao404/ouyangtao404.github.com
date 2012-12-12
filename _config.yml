@@ -1,5 +1,3 @@
-BASE_PATH: false
-baseurl: false
 githubHost: http://localhost:4000
 localHost: http://ouyangtao404.github.com/
 url:  http://ouyangtao404.github.com                # 博客地址
@@ -15,12 +13,11 @@ markdown: rdiscount
 paginate: 5
 
 nav:
-  about_path : /blog/about-me.html        #about-me
-  github_path: http://github.com/ouyangtao404/
+  github: http://github.com/ouyangtao404/
+  about me: /blog/about-me.html        #about-me
 
 #分类的相关参数
 sort:
-  version: 1.0.0
-  categories_path : /blog/categories.html #categories
-  tags_path : /blog/tags.html             #tags
+  categories : /blog/categories.html #categories
+  tags : /blog/tags.html             #tags
   

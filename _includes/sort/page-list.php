@@ -1,4 +1,5 @@
-{% comment %}<!--
+{% comment %}
+<!--
 The pages_list include is a listing helper.
 Usage:
   1) assign the 'pages_list' variable to a valid array of pages or posts.
@@ -18,16 +19,13 @@ Usage:
    i.e. site.tags.cool_tag (this returns an array of posts tagged: cool_tag)
   
   This helper can be seen in use at: ../_layouts/default.html
--->{% endcomment %}
+-->
+{% endcomment %}
 
 
 {% for node in pages_list %}
 	{% if group == null or group == node.group %}
-		{% if page.url == node.url %}
-	    	<li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
-	    {% else %}
-	    	<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
- 		{% endif %}
+		<li><span class="date">【{{ node.date | date_to_string }}】</span><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
 	{% endif %}
 {% endfor %}
 

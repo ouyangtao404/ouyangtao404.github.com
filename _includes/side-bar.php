@@ -1,4 +1,5 @@
 <!-- sidebar -->
+{% assign from_side_bar = true %}
 <aside id="sidebar">
 	
 	<ul>
@@ -8,7 +9,7 @@
 		</li>
 		
 		<li class="block" style="">
-    		<span>博客字数：{{ content | number_of_words }}</span><br/>
+    		<span>本页内容字数：{{ content | number_of_words }}</span><br/>
 			<span>最后更新时间：{{ site.time | date_to_long_string }}</span><br/>
 		</li>
 		<li class="block" style="">
@@ -29,4 +30,5 @@
 	</ul>
 	
 </aside>
+{% assign from_side_bar = false %}
 <!-- ENDS sidebar -->

@@ -1,11 +1,28 @@
 /**
- * 	分类页的标题
+ * 	上一篇下一篇样式
  */
+.near{
+	margin-top:30px;
+}
+.near .near-one{
+	margin:0;
+}
+/**
+ * 	分类页
+ */
+
+.article-title,
 .blog-list .list-title{
 	font-size:25px;
 	margin-bottom:15px;
 	border-bottom:5px solid #A83E2A;
 	border-radius:0 0 0 10px;
+}
+.blog-list .date{
+	color:#a83e2a;
+}
+#fenlei{
+	margin-bottom:20px;
 }
 /**
  * 	tag容器样式
@@ -60,7 +77,7 @@
 /**
  * 	a链接的统一样式
  */
-.blog-list a,
+a,
 .comment-num,
 #posts-list article.comment .comment,
 .blog-list .atc-list a {
@@ -71,7 +88,7 @@
     transition:        	color 0.1s ease-in,background 0.1s ease-out;*/
    border-bottom:1px dotted #a83e2a;
 }
-.blog-list a:hover,
+a:hover,
 .comment-num:hover,
 #posts-list article.comment .comment:hover,
 .blog-list .atc-list a:hover {
@@ -96,6 +113,9 @@
 .blog-share .share-items{ 
 	width:510px;
 	float:right;
+}
+.blog-share .share-items a{
+	border:none;
 }
 /**
  * 	右栏 sidebar
@@ -1137,6 +1157,9 @@ nav {
     line-height: 0;
     position: relative;
 }
+#posts-list article .feature-image a{
+	border:none;
+}
 #posts-list article .feature-image img {
     max-width: 100%;
 }
@@ -1168,9 +1191,10 @@ nav {
     font-size: 36px;
     line-height: 1.1em;
     max-width: 480px;
+    border:none;
 }
 #posts-list article .meta {
-    border-top: 1px solid #585246;
+/*    border-top: 1px solid #585246;*/
     display: block;
     font-size: 14px;
     padding-top: 10px;
@@ -1196,6 +1220,7 @@ nav {
 }
 #main .page-navigation .unable,
 #main .page-navigation a {
+	border:none;
     color: #CB5432;
     display: block;
     padding: 10px 15px;
@@ -1214,13 +1239,14 @@ nav {
 #main .page-navigation .nav-next {
     background: url("/img/arrow-left.png") no-repeat scroll left 12px #F3E4C8;
     float: left;
-    margin-right: 20px;
     padding-left: 20px;
+    margin-right: 20px;
 }
 #main .page-navigation .nav-previous {
     background: url("/img/arrow-right.png") no-repeat scroll right 12px #F3E4C8;
     float: right;
     padding-right: 20px;
+    
 }
 #sidebar {
     float: right;
@@ -1338,6 +1364,7 @@ footer #social-bar li {
     margin-right: 3px;
 }
 footer #social-bar li a {
+	border:none;
     display: block;
     line-height: 0;
 }

@@ -18,21 +18,19 @@ Usage:
   This helper can be seen in use at: ../_layouts/default.html
 -->
 {% endcomment %}
-{% if categories_list.first[0] == null %}
+
     {% for category in categories_list %}
-	    <li class="1st">
-	    	<a href="{{ BASE_PATH }}{{ site.sort.categories_path }}#{{ category }}-ref">
-	     		{{ category | join: "/" }} <span>{{ site.categories[category].size }}</span>
-	     	</a>
-	    </li>
+    	<li class="cat-item">
+			<a title="title" href="{{ BASE_PATH }}{{ site.sort.categories }}#{{ category[0] }}-ref">
+				{{ category[0] | join: "/" }}
+				
+				{% if(from_side_bar) %}
+				<span class="post-counter">({{ category[1].size }})</span>
+				{% else %}
+				<span class="post-counter">{{ category[1].size }}</span>
+				{% endif %}
+			</a>
+		</li>
     {% endfor %}
-{% else %}
-    {% for category in categories_list %}
-    	<li class="2nd">
-    		<a href="{{ BASE_PATH }}{{ site.sort.categories_path }}#{{ category[0] }}-ref">
-     			{{ category[0] | join: "/" }} <span>{{ category[1].size }}</span>
-     		</a>
-     	</li>
-    {% endfor %}
-{% endif %}
+
 {% assign categories_list = null %}

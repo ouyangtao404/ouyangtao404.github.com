@@ -20,7 +20,7 @@
 						{% endif %}
 					</div>
 					<div class="excerpt">
-						<h1>{{ page.title }}</h1>
+						<h3 class="article-title">{{ page.title }}{% if(page.category) %}【{{ page.category }}】{% else %}【未归类】{% endif %}</h3>
 						{{ content }}
 					</div>
 					<i class="tape"></i>
@@ -29,9 +29,28 @@
 					{% include share.php %}
 					<!--分享功能   end-->
 					
+					<!--相关标签 start-->
+					{% include tags.php %}
+					<!--相关标签   end-->
+					
 					<!--相关文章 start-->
 					{% include related.php %}
 					<!--相关文章   end-->
+					
+					<div class="near">
+					{% if(page.previous) %}
+						<p class="near-one">上一篇：<a href="{{ page.previous.url }}">{{ page.previous.title }}</a></p>
+					{% else %}
+						<p class="near-one">上一篇：<span>木有了</span></p>
+					{% endif %}
+					
+					{% if(page.next) %}
+						<p class="near-one">下一篇：<a href="{{ page.next.url }}">{{ page.next.title }}</a></p>
+				    {% else %}
+				   		<p class="near-one">下一篇：<span>木有了</span></p>
+				    {% endif %}
+					</div>
+					
 				</article>
 				
 				<article class="comment">
@@ -67,16 +86,25 @@
 				</article>
 				
 				<!--内容 end-->
-				<span>{{ page.categories }}</span><br/>
-				<span>{{ page.tags }}</span><br/>
-				<span>{{ page.id }}</span><br/>
-				<span>{{ page.url }}</span><br/>
-				<span>{{ page.date | YYYY-MM-DD HH:MM:SS }}</span><br/>
-				<span>{{ page.next.title }}</span><br/>
-				<span>{{ page.previous.title }}</span><br/>
 				
+				<div style="display:none;" class="xxx">{{ page }}</div>
+				<div style="display:none;" class="xxx2">{{ page.previous }}</div>
+				
+				<div class="page-navigation cf" style="display:none;">
 					
-						
+					{% if(page.previous) %}
+						<div class="nav-previous">上一篇：<a href="{{ page.previous.url }}">{{ page.previous.title }}</a></div>
+					{% else %}
+						<div class="nav-previous">上一篇：<span>木有了</span></div>
+					{% endif %}
+					
+					{% if(page.next) %}
+					<div class="nav-next">下一篇：<a href="{{ page.next.url }}">{{ page.next.title }}</a></div>
+				    {% else %}
+				   	<div class="nav-next">下一篇：<span>木有了</span></div>
+				    {% endif %}
+					
+				</div>
 		    </div>
 			<!-- ENDS posts list -->			
 			

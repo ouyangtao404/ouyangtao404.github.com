@@ -39,17 +39,19 @@
 			</div>
 		</div><!-- ENDS header wrapper -->
 		
-		
-		
 		<!-- nav -->
 		<nav class="cf">
 			<div class="wrapper cf">
 				<ul id="nav" class="sf-menu">
 					<li><a href="/">HOME<i><b></b></i></a></li>
-					<li><a href="{{ site.sort.categories_path }}">CATEGORIES<i><b></b></i></a></li>
-					<li><a href="{{ site.sort.tags_path }}">TAGS<i><b></b></i></a></li>
-					<li><a href="{{ site.nav.github_path }}">GITHUB<i><b></b></i></a></li>
-					<li><a href="{{ site.nav.about_path }}">ABOUT ME<i><b></b></i></a></li>
+					
+					{% for tab in site.sort %}
+					<li class="test"><a href="{{ tab[1] }}">{{ tab[0] }}<i><b></b></i></a></li>
+					{% endfor %}
+					{% for tab in site.nav %}
+					<li class="test"><a href="{{ tab[1] }}">{{ tab[0] }}<i><b></b></i></a></li>
+					{% endfor %}
+					
 				</ul>
 				<div id="combo-holder"></div>
 			</div>
