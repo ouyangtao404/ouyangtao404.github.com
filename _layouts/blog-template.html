@@ -10,13 +10,13 @@
 			<!-- posts list -->
 			<div id="posts-list" class="cf"> 
 				<!--内容 start-->
-				<article>
+				<article class="">
 					<div class="feature-image">
 						{% if(page.cover) %}
 						<a href="javascript:void(0);" ><img src="{{ page.cover }}" style="width:560px;"/></a>
 						{% endif %}
 						{% if(page.date) %}
-						<div class="entry-date">{{ page.date | date_to_string }}</div>
+						<div class="entry-date">{{ page.date | date_to_string}}</div>
 						{% endif %}
 					</div>
 					<div class="excerpt">
@@ -29,6 +29,9 @@
 					{% include share.php %}
 					<!--分享功能   end-->
 					
+					<!--相关文章 start-->
+					{% include related.php %}
+					<!--相关文章   end-->
 				</article>
 				
 				<article class="comment">
@@ -64,7 +67,13 @@
 				</article>
 				
 				<!--内容 end-->
-				
+				<span>{{ page.categories }}</span><br/>
+				<span>{{ page.tags }}</span><br/>
+				<span>{{ page.id }}</span><br/>
+				<span>{{ page.url }}</span><br/>
+				<span>{{ page.date | YYYY-MM-DD HH:MM:SS }}</span><br/>
+				<span>{{ page.next.title }}</span><br/>
+				<span>{{ page.previous.title }}</span><br/>
 				
 					
 						

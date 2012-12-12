@@ -1,0 +1,22 @@
+---
+layout: sort-template
+title: 标签
+---
+
+
+<article class="blog-list">
+	<h3 class="list-title">标签</h3>
+	<div id="fenlei">
+		<ul class="blog-tag-box clearfix">
+		  {% assign tags_list = site.tags %}
+		  {% include sort/tags/tags.php %}
+		</ul>
+	</div>
+	{% for tag in site.tags %}
+	  <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
+	  <ul>
+	    {% assign pages_list = tag[1] %}
+	    {% include sort/page-list.php %}
+	  </ul>
+	{% endfor %}
+</article>

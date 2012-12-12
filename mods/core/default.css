@@ -1,20 +1,82 @@
 /**
+ * 	分类页的标题
+ */
+.blog-list .list-title{
+	font-size:25px;
+	margin-bottom:15px;
+	border-bottom:5px solid #A83E2A;
+	border-radius:0 0 0 10px;
+}
+/**
+ * 	tag容器样式
+ */
+.blog-tag-box{
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.4);
+    list-style: none outside none;
+    padding: 0.8125em;
+    background: url("/img/tag-box.png") repeat scroll 0 0 padding-box #999999;
+} 
+.blog-tag-box li{
+	display: inline;
+    line-height: normal;
+    vertical-align: middle;
+}
+.blog-tag-box li a{
+	-moz-user-select: none;
+    background-clip: padding-box;
+    background-color: #99CC99;
+    border: 1px solid #448844;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 1px rgba(0, 0, 0, 0.2);
+    float: left;
+    margin: 5px;
+    padding: 3px 6px;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.4);
+    transition-duration: 0.2s;
+    vertical-align: bottom;
+    color:#000;
+}
+.blog-tag-box li a:hover {
+    background-color: #77BB77;
+    border: 1px solid #336633;
+    text-decoration:none;
+    color:#fff;
+}
+.blog-tag-box span {
+    background-color: #FAFAFA;
+    border: 1px solid #99CC99;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: #1A1A1A;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 1px 5px;
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+}
+/**
  * 	a链接的统一样式
  */
+.blog-list a,
 .comment-num,
 #posts-list article.comment .comment,
 .blog-list .atc-list a {
 	color:#a83e2a;
-	-webkit-transition: color 0.1s ease-in,background 0.1s ease-out;
+	/*-webkit-transition: color 0.1s ease-in,background 0.1s ease-out;
     -moz-transition:    color 0.1s ease-in,background 0.1s ease-out;
     -o-transition:      color 0.1s ease-in,background 0.1s ease-out;
-    transition:        	color 0.1s ease-in,background 0.1s ease-out;
+    transition:        	color 0.1s ease-in,background 0.1s ease-out;*/
+   border-bottom:1px dotted #a83e2a;
 }
+.blog-list a:hover,
 .comment-num:hover,
 #posts-list article.comment .comment:hover,
 .blog-list .atc-list a:hover {
-	color:#fff;
-	background:#a83e2a;
+	/*color:#fff;
+	background:#a83e2a;*/
 	text-decoration:none;
 }
 
@@ -25,7 +87,16 @@
 	height:40px;
 	padding-top:15px;
 }
-
+.blog-share .title{
+	height:40px;
+	line-height:37px;
+	width:50px;
+	float:left;
+}
+.blog-share .share-items{ 
+	width:510px;
+	float:right;
+}
 /**
  * 	右栏 sidebar
  */

@@ -3,6 +3,7 @@ layout: blog-template
 title: markdown语法
 cover: 
 summary: markdown语法
+tags: test
 ---
 
 

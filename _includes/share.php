@@ -1,6 +1,7 @@
-<div class="blog-share">
+<div class="blog-share clearfix">
+	<div class="title">分享到：</div>
 	<!-- TianJi Button BEGIN -->
-	<div id="tianji_style_32x32">
+	<div id="tianji_style_32x32" class="share-items">
 		<a title="分享到新浪微博" class="tianji_button_tsina"></a>
 		<a title="分享到QQ空间" class="tianji_button_qzone"></a>
 		<a title="分享到腾讯微博" class="tianji_button_tqq"></a>

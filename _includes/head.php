@@ -46,8 +46,10 @@
 			<div class="wrapper cf">
 				<ul id="nav" class="sf-menu">
 					<li><a href="/">HOME<i><b></b></i></a></li>
-					<li><a href="/blog/list.html">LIST<i><b></b></i></a></li>
-					<li><a href="/blog/about-me.html">ABOUT ME<i><b></b></i></a></li>
+					<li><a href="{{ site.sort.categories_path }}">CATEGORIES<i><b></b></i></a></li>
+					<li><a href="{{ site.sort.tags_path }}">TAGS<i><b></b></i></a></li>
+					<li><a href="{{ site.nav.github_path }}">GITHUB<i><b></b></i></a></li>
+					<li><a href="{{ site.nav.about_path }}">ABOUT ME<i><b></b></i></a></li>
 				</ul>
 				<div id="combo-holder"></div>
 			</div>

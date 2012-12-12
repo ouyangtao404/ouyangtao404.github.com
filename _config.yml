@@ -1,14 +1,26 @@
-baseurl: ''
+BASE_PATH: false
+baseurl: false
 githubHost: http://localhost:4000
 localHost: http://ouyangtao404.github.com/
-url:  http://ouyangtao404.github.com                 # 博客地址
+url:  http://ouyangtao404.github.com                # 博客地址
 
-title: 欧阳涛的博客                                                   # 博客标题 
+title: 欧阳涛的博客                                    # 博客标题 
 subtitle:  平凡的坚持  # 副标题 
 author:    欧阳涛     # 作者 
 simple_search:  http://www.google.com.hk/search     # 搜索引擎 
-description:                                                            # 关于博客的描述 
+description:                                        # 关于博客的描述 
 permalink: /blog/:year/:month/:day/:title           # 文章的固定链接形式
 
 markdown: rdiscount
 paginate: 5
+
+nav:
+  about_path : /blog/about-me.html        #about-me
+  github_path: http://github.com/ouyangtao404/
+
+#分类的相关参数
+sort:
+  version: 1.0.0
+  categories_path : /blog/categories.html #categories
+  tags_path : /blog/tags.html             #tags
+  

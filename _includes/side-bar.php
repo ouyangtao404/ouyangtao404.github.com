@@ -8,21 +8,23 @@
 		</li>
 		
 		<li class="block" style="">
-    		<h4 class="heading">博客信息</h4>
     		<span>博客字数：{{ content | number_of_words }}</span><br/>
 			<span>最后更新时间：{{ site.time | date_to_long_string }}</span><br/>
 		</li>
-		<!--
 		<li class="block" style="">
-    		<h4 class="heading">Categories</h4>
+    		<h4 class="heading">分类</h4>
 			<ul>
-				
-				<li class="cat-item"><a href="#" title="title">Habitant morbi<span class="post-counter"> (2)</span></a></li>
-			
+				{% assign categories_list = site.categories %}
+				{% include sort/categories/categories.php %}
 			</ul>
 		</li>
-		-->
-		
+		<li class="block" style="">
+    		<h4 class="heading">标签</h4>
+			<ul>
+				{% assign tags_list = site.tags %}
+				{% include sort/tags/tags.php %}
+			</ul>
+		</li>
 	
 	</ul>
 	

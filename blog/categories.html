@@ -1,0 +1,23 @@
+---
+layout: sort-template
+title: 分类
+---
+
+
+
+<article class="blog-list">
+<h3 class="list-title">分类</h3>
+<div id="fenlei">
+	<ul class="blog-tag-box clearfix">
+		{% assign categories_list = site.categories %}
+		{% include sort/categories/categories.php %}
+	</ul>
+</div>
+	{% for category in site.categories %}
+	  <h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>
+	  <ul>
+	    {% assign pages_list = category[1] %}
+    	{% include sort/page-list.php %}
+	  </ul>
+	{% endfor %}
+</article>
