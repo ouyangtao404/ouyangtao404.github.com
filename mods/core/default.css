@@ -1139,7 +1139,7 @@ nav {
     position: relative;
 }
 #posts-list article.comment{
-	margin-top:-45px;
+/*	margin-top:-45px;*/
 }
 #posts-list article.comment .comment{
 	font-size:14px;
