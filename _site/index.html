@@ -83,16 +83,22 @@
   <div class="content">
     <h3>给jekyll模板添加分页功能</h3>
 
-<p>-- 只能在index.html生效，这点不大好
-<a href="https://github.com/mojombo/jekyll/wiki/Pagination">给jekyll模板添加分页功能</a></p>
+<ul>
+<li>只能在index.html生效，这点不大好</li>
+<li><a href="https://github.com/mojombo/jekyll/wiki/Pagination">给jekyll模板添加分页功能</a></li>
+</ul>
+
 
 <h3>jekyll相关知识博客链接</h3>
 
-<p><a href="http://www.brucebot.com/2012/03/blog_with_jekyll_and_markdown/">于仁颇黎</a>
-<a href="http://beiyuu.com/github-pages/">BeiYuu.co</a>
-<a href="http://www.cnblogs.com/TheGrandDesign/articles/2573386.html">【译文】用Jekyll构建静态网站</a>
-<a href="https://github.com/mojombo/jekyll/wiki/_pages">jekyll的wiki</a>
-<a href="http://joshua-leung.me/index.html">高城居-视觉和特效不错的博客</a></p>
+<ul>
+<li><a href="http://www.brucebot.com/2012/03/blog_with_jekyll_and_markdown/">于仁颇黎</a></li>
+<li><a href="http://beiyuu.com/github-pages/">BeiYuu.co</a></li>
+<li><a href="http://www.cnblogs.com/TheGrandDesign/articles/2573386.html">【译文】用Jekyll构建静态网站</a></li>
+<li><a href="https://github.com/mojombo/jekyll/wiki/_pages">jekyll的wiki</a></li>
+<li><a href="http://joshua-leung.me/index.html">高城居-视觉和特效不错的博客</a></li>
+</ul>
+
 
   </div>
 
@@ -103,32 +109,51 @@
     <span class="date">2012-12-11 00:00:00 +0800</span>
   </p>
   <div class="content">
-    <h2>操作git的常用命令</h2>
+    <h4>在本地checkout我新建的项目a</h4>
 
-<p>
-在本地checkout我新建的项目a
-git clone git://fullpath/a.git
+<ul>
+<li>git clone git://fullpath/a.git</li>
+</ul>
 
-远程添加主干
-git remote add b git://fullpath/b.git
 
-将b的内容抓取到缓冲区中
-git fetch b
+<h4>远程添加主干</h4>
 
-将b合并至当前工作区（a）
-git merge b
+<ul>
+<li>git remote add b git://fullpath/b.git</li>
+</ul>
 
-在当前工作区中编辑b内容
 
-提交修改
-git add Content.md （可以用.表示所有文件的修改）
-git commit          (可以用 –a  表示所有文件  git commit –a –m”这里是日志”)
+<h4>将b的内容抓取到缓冲区中</h4>
 
-push到远程
-git push （git push 到哪去）
-</p>
+<ul>
+<li>git fetch b</li>
+</ul>
 
-<p>11 Dec 2012</p>
+
+<h4>将b合并至当前工作区（a）</h4>
+
+<ul>
+<li>git merge b</li>
+</ul>
+
+
+<h4>在当前工作区中编辑b内容</h4>
+
+<h4>提交修改</h4>
+
+<ul>
+<li>git add Content.md （可以用.表示所有文件的修改）</li>
+<li>git commit          (可以用 –a  表示所有文件  git commit –a –m”这里是日志”)</li>
+</ul>
+
+
+<h4>push到远程</h4>
+
+<ul>
+<li>git push （git push 到哪去）</li>
+</ul>
+
+
   </div>
 
 
@@ -271,7 +296,12 @@ function fib() {
 fib | head -10 | tail -1
 </pre>
 
+
+
+
 <p>09 Dec 2012</p>
+
+
   </div>
 
 
@@ -329,77 +359,139 @@ PHPer都知道， ！是取反的意思；
   </div>
  --> 
 
-
-
-
-<article>
-	<div class="feature-image">
-		
-		<div class="entry-date">11 Dec 2012</div>
-	</div>
-	<div class="excerpt">
-		<a href="/blog/2012/12/11/jekyll" class="post-heading" >jekyll搭建个人博客的记录</a>
+<!-- <article>
+	<ul class="atc-list">
+	
+	<li class="atc-one">
 		<a class="comment-num" href="/blog/2012/12/11/jekyll#disqus_thread">评论数加载中...</a>
-		<p>在搭建过程中一些记录</p>
-		 
-	</div>
-	<i class="tape"></i>
-</article>
-
-<article>
-	<div class="feature-image">
-		
-		<div class="entry-date">11 Dec 2012</div>
-	</div>
-	<div class="excerpt">
-		<a href="/blog/2012/12/11/git-command" class="post-heading" >操作git的常用命令</a>
+		<a class="clearfix" href="/blog/2012/12/11/jekyll">
+			<span class="title">jekyll搭建个人博客的记录</span>
+			<span class="date">11 Dec 2012</span>
+		</a>
+	</li>
+	
+	<li class="atc-one">
 		<a class="comment-num" href="/blog/2012/12/11/git-command#disqus_thread">评论数加载中...</a>
-		<p></p>
-		 
-	</div>
-	<i class="tape"></i>
-</article>
-
-<article>
-	<div class="feature-image">
-		
-		<div class="entry-date">09 Dec 2012</div>
-	</div>
-	<div class="excerpt">
-		<a href="/blog/2012/12/09/test" class="post-heading" >markdown语法</a>
+		<a class="clearfix" href="/blog/2012/12/11/git-command">
+			<span class="title">操作git的常用命令</span>
+			<span class="date">11 Dec 2012</span>
+		</a>
+	</li>
+	
+	<li class="atc-one">
 		<a class="comment-num" href="/blog/2012/12/09/test#disqus_thread">评论数加载中...</a>
-		<p>markdown语法</p>
-		 
-	</div>
-	<i class="tape"></i>
-</article>
-
-<article>
-	<div class="feature-image">
-		
-		<div class="entry-date">09 Dec 2012</div>
-	</div>
-	<div class="excerpt">
-		<a href="/blog/2012/12/09/code-high-light" class="post-heading" >测试代码高亮插件</a>
+		<a class="clearfix" href="/blog/2012/12/09/test">
+			<span class="title">markdown语法</span>
+			<span class="date">09 Dec 2012</span>
+		</a>
+	</li>
+	
+	<li class="atc-one">
 		<a class="comment-num" href="/blog/2012/12/09/code-high-light#disqus_thread">评论数加载中...</a>
-		<p>测试代码高亮插件</p>
-		 
+		<a class="clearfix" href="/blog/2012/12/09/code-high-light">
+			<span class="title">测试代码高亮插件</span>
+			<span class="date">09 Dec 2012</span>
+		</a>
+	</li>
+	
+	<li class="atc-one">
+		<a class="comment-num" href="/blog/2012/10/26/zhengze#disqus_thread">评论数加载中...</a>
+		<a class="clearfix" href="/blog/2012/10/26/zhengze">
+			<span class="title">正则表达式系统教程</span>
+			<span class="date">26 Oct 2012</span>
+		</a>
+	</li>
+	
+	
+	</ul>
+</article> -->
+
+
+<article>
+	<div class="one">
+		<div class="feature-image">
+			
+			<div class="entry-date">11 Dec 2012</div>
+		</div>
+		<div class="excerpt">
+			<a href="/blog/2012/12/11/jekyll" class="post-heading" >jekyll搭建个人博客的记录</a>
+			<a class="comment-num" href="/blog/2012/12/11/jekyll#disqus_thread">评论数加载中...</a>
+			<p>在搭建过程中一些记录</p>
+			 
+		</div>
+		<i class="tape"></i>
 	</div>
-	<i class="tape"></i>
+	
 </article>
 
 <article>
-	<div class="feature-image">
-		
-		<div class="entry-date">26 Oct 2012</div>
+	<div class="one">
+		<div class="feature-image">
+			
+			<a href="/blog/2012/12/11/git-command" ><img src="" style="width:560px;height:300px;"/></a>
+			
+			<div class="entry-date">11 Dec 2012</div>
+		</div>
+		<div class="excerpt">
+			<a href="/blog/2012/12/11/git-command" class="post-heading" >操作git的常用命令</a>
+			<a class="comment-num" href="/blog/2012/12/11/git-command#disqus_thread">评论数加载中...</a>
+			<p></p>
+			 
+		</div>
+		<i class="tape"></i>
 	</div>
-	<div class="excerpt">
-		<a href="/blog/2012/10/26/zhengze" class="post-heading" >正则表达式系统教程</a>
-		<a class="comment-num" href="/blog/2012/10/26/zhengze#disqus_thread">评论数加载中...</a>
-		<p>正则表达式的一些快捷速记语句，分享来的。</p>
-		 
+	
+</article>
+
+<article>
+	<div class="one">
+		<div class="feature-image">
+			
+			<div class="entry-date">09 Dec 2012</div>
+		</div>
+		<div class="excerpt">
+			<a href="/blog/2012/12/09/test" class="post-heading" >markdown语法</a>
+			<a class="comment-num" href="/blog/2012/12/09/test#disqus_thread">评论数加载中...</a>
+			<p>markdown语法</p>
+			 
+		</div>
+		<i class="tape"></i>
 	</div>
-	<i class="tape"></i>
+	
+</article>
+
+<article>
+	<div class="one">
+		<div class="feature-image">
+			
+			<div class="entry-date">09 Dec 2012</div>
+		</div>
+		<div class="excerpt">
+			<a href="/blog/2012/12/09/code-high-light" class="post-heading" >测试代码高亮插件</a>
+			<a class="comment-num" href="/blog/2012/12/09/code-high-light#disqus_thread">评论数加载中...</a>
+			<p>测试代码高亮插件</p>
+			 
+		</div>
+		<i class="tape"></i>
+	</div>
+	
+</article>
+
+<article>
+	<div class="one">
+		<div class="feature-image">
+			
+			<div class="entry-date">26 Oct 2012</div>
+		</div>
+		<div class="excerpt">
+			<a href="/blog/2012/10/26/zhengze" class="post-heading" >正则表达式系统教程</a>
+			<a class="comment-num" href="/blog/2012/10/26/zhengze#disqus_thread">评论数加载中...</a>
+			<p>正则表达式的一些快捷速记语句，分享来的。</p>
+			 
+		</div>
+		<i class="tape"></i>
+	</div>
+	
 </article>
 
 
@@ -451,8 +543,8 @@ PHPer都知道， ！是取反的意思；
 		</li>
 		
 		<li class="block" style="">
-    		<span>本页内容字数：613</span><br/>
-			<span>最后更新时间：13 December 2012</span><br/>
+    		<span>本页内容字数：729</span><br/>
+			<span>最后更新时间：16 December 2012</span><br/>
 		</li>
 		<li class="block" style="">
     		<h4 class="heading">分类</h4>
@@ -462,11 +554,41 @@ PHPer都知道， ！是取反的意思；
 
     
     	<li class="cat-item">
-			<a title="title" href="/blog/categories.html#测试页面-ref">
-				测试页面
+			<a title="title" href="/blog/categories.html#测试-ref">
+				测试
 				
 				
 				<span class="post-counter">(2)</span>
+				
+			</a>
+		</li>
+    
+    	<li class="cat-item">
+			<a title="title" href="/blog/categories.html#总结-ref">
+				总结
+				
+				
+				<span class="post-counter">(1)</span>
+				
+			</a>
+		</li>
+    
+    	<li class="cat-item">
+			<a title="title" href="/blog/categories.html#转发-ref">
+				转发
+				
+				
+				<span class="post-counter">(1)</span>
+				
+			</a>
+		</li>
+    
+    	<li class="cat-item">
+			<a title="title" href="/blog/categories.html#分享-ref">
+				分享
+				
+				
+				<span class="post-counter">(1)</span>
 				
 			</a>
 		</li>
@@ -476,7 +598,7 @@ PHPer都知道， ！是取反的意思；
 				备忘
 				
 				
-				<span class="post-counter">(1)</span>
+				<span class="post-counter">(2)</span>
 				
 			</a>
 		</li>
@@ -495,7 +617,7 @@ PHPer都知道， ！是取反的意思；
 			<a title="title" href="/blog/tags.html#测试-ref">
 				测试
 				
-				<span class="post-counter">(2)</span>
+				<span class="post-counter">(3)</span>
 				
 			</a>
 		</li>
@@ -510,26 +632,8 @@ PHPer都知道， ！是取反的意思；
 		</li>
 	
 		<li class="cat-item">
-			<a title="title" href="/blog/tags.html#test-ref">
-				test
-				
-				<span class="post-counter">(1)</span>
-				
-			</a>
-		</li>
-	
-		<li class="cat-item">
 			<a title="title" href="/blog/tags.html#git-ref">
 				git
-				
-				<span class="post-counter">(1)</span>
-				
-			</a>
-		</li>
-	
-		<li class="cat-item">
-			<a title="title" href="/blog/tags.html#备忘-ref">
-				备忘
 				
 				<span class="post-counter">(1)</span>
 				

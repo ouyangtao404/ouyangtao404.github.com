@@ -2,21 +2,21 @@
 layout: blog-template
 title: jekyll搭建个人博客的记录
 cover: 
-tags: ["备忘", "博客", "jekyll应用"]
+tags: ["博客", "jekyll应用"]
 category: "备忘"
 summary: 在搭建过程中一些记录
 ---
 
 ###给jekyll模板添加分页功能
--- 只能在index.html生效，这点不大好
-[给jekyll模板添加分页功能](https://github.com/mojombo/jekyll/wiki/Pagination)
+- 只能在index.html生效，这点不大好
+- [给jekyll模板添加分页功能](https://github.com/mojombo/jekyll/wiki/Pagination)
 
 ###jekyll相关知识博客链接
-[于仁颇黎](http://www.brucebot.com/2012/03/blog_with_jekyll_and_markdown/)
-[BeiYuu.co](http://beiyuu.com/github-pages/)
-[【译文】用Jekyll构建静态网站](http://www.cnblogs.com/TheGrandDesign/articles/2573386.html)
-[jekyll的wiki](https://github.com/mojombo/jekyll/wiki/_pages)
-[高城居-视觉和特效不错的博客](http://joshua-leung.me/index.html)
+- [于仁颇黎](http://www.brucebot.com/2012/03/blog_with_jekyll_and_markdown/)
+- [BeiYuu.co](http://beiyuu.com/github-pages/)
+- [【译文】用Jekyll构建静态网站](http://www.cnblogs.com/TheGrandDesign/articles/2573386.html)
+- [jekyll的wiki](https://github.com/mojombo/jekyll/wiki/_pages)
+- [高城居-视觉和特效不错的博客](http://joshua-leung.me/index.html)
 
 
 

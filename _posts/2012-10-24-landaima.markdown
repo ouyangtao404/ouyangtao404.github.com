@@ -3,6 +3,7 @@ layout: blog-template
 title: 烂代码外科手术分享
 cover: http://img02.taobaocdn.com/tps/i2/T1NF7bXXXjXXblQ4v1-696-338.jpg
 summary: 保持统一、规范的代码风格是让代码成为好代码的第一步，很多细节的东西，都是需要需要养成固定的习惯。
+category: "总结"
 ---
 
 ##好代码和烂代码区分在哪里

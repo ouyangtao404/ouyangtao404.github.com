@@ -2,6 +2,7 @@
 layout: blog-template
 title: 正则表达式系统教程
 summary: 正则表达式的一些快捷速记语句，分享来的。
+category: "转发"
 ---
 
 	正则其实也势利，削尖头来把钱揣； （指开始符号^和结尾符号$）

@@ -1134,8 +1134,8 @@ nav {
 #posts-list article {
     background: none repeat scroll 0 0 #F3E4C8;
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.1);
-    margin-bottom: 50px;
-    padding: 30px;
+    margin-bottom: 3px;
+    padding:8px 30px;
     position: relative;
 }
 #posts-list article.comment{
