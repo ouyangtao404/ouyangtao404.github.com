@@ -24,7 +24,7 @@ KISSY.add('custom-slide', function(S) {
 				self.Anim = Anim;
 				
 				self._setParam(config);
-				self._setStructure(config);
+				self._setStructure();
 				self._bindEvent();
 			});
 		},
@@ -33,22 +33,32 @@ KISSY.add('custom-slide', function(S) {
 			
 			self.config = config;
 			self.imgBox = D.get('.img-box', self.container);
-			self.img = D.get('.img-pic', self.container);
+			self.imgs = D.query('.img-pic', self.container);
+		},
+		_getImgWidth: function() {
+			var self = this;
+			var width = 0;
+			var imgs = self.imgs;
+			var len = imgs.length;
+			for(var i = 0; i < len; i++) {
+				width += D.width(imgs[i]);
+			}
+			return width;
 		},
 		_setStructure: function() {
 			var self = this;
 			
 			//容器宽度
 			var conWidth = D.width(self.container);
-			var imgBoxWidth = D.width(self.imgBox);
-			var imgWidth = D.width(self.img);
+			var imgWidth = self._getImgWidth();
 			
 			var yushu = imgWidth % conWidth;
 			var num = parseInt(imgWidth / conWidth, 10);
 			var screenNum = (yushu > 0) ? num + 1 : num ;
 			
+			//设置img容器宽度
 			D.width(self.imgBox, screenNum * conWidth);
-			
+
 			//初始化、resize都把图片容器left重置
 			new self.Anim(self.imgBox, {
 				left: 0
