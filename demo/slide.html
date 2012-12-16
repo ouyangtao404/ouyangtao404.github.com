@@ -1,0 +1,138 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js ie ie6 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 7]><html class="no-js ie ie7 lte9 lte8 lte7"> <![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8 lte9 lte8"> <![endif]-->
+<!--[if IE 9]><html class="no-js ie ie9 lte9"> <![endif]-->
+<!--[if gt IE 9]><html class="no-js"><![endif]-->
+<!--[if !IE]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+    <title>CustomSlide</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 响应式设计代码 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link type="image/x-icon" href="" rel="shortcut icon" />
+    <!-- html5reset and css3 -->
+    <link rel="stylesheet" href="http://a.tbcdn.cn/??p/global/1.0/global-min.css,app/dp/s/html5/css/common-min.css"/>
+    <!--[if lt IE 9]><script src="http://a.tbcdn.cn/app/dp/s/html5/js/??html5shiv-min.js,modernizr-v2.5.3-min.js"></script><![endif]-->
+    <!--[if gte IE 9]><!--><script src="http://a.tbcdn.cn/app/dp/s/html5/js/modernizr-v2.5.3-min.js"></script><!--<![endif]-->
+    <script src="http://a.tbcdn.cn/??s/kissy/1.2.0/kissy-min.js,p/global/1.0/global-min.js,p/et/et.js?t=2012011120110301.js" type="text/javascript"></script>
+<!-- 	<script scr="slide.js"></script> -->
+	
+<style>
+body{
+	background:#ccc;
+}
+#J_slide{
+	width:90%;
+	height:400px;
+	border:1px solid black;
+	background:#fff;
+	margin:10px auto;
+	position:relative;
+	overflow:hidden;
+}
+#J_slide .change{
+	width:40px;
+	height:40px;
+	background:red;
+	position:absolute;
+	top:170px;
+	z-index:10;
+}
+#J_slide .prev{
+	left:10px;
+}
+#J_slide .next{
+	right:10px;
+}
+#J_slide .img-box{
+	background:yellow;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	left:0;
+}
+#J_slide .img-box img{
+	float:left;
+}
+#J_slide .dots{
+	width:100%;
+	height:15px;
+	overflow:hidden;
+	position:absolute;
+	bottom:0;
+	left:0;
+	clear:both;
+}
+#J_slide .dots .dot{
+	width:15px;
+	height:15px;
+	float:left;
+	margin-right:5px;
+}
+#J_slide .dots .dot a{
+	width:15px;
+	height:15px;
+	color:#fff;
+	display:block;
+	background:red;
+	line-height:15px;
+	text-align:center;
+}
+#J_slide .dots .current a{
+	background:blue;
+}
+</style>
+	<!--<![endif]-->
+
+</head>
+
+<body>
+	<div id="J_slide">
+		<a class="change prev" href="javascript:void(0);">prev</a>
+		<a class="change next" href="javascript:void(0);">next</a>
+		<div class="img-box clearfix">
+			<img class="img-pic" style="width:5000px;height:100%;display:block" src="http://img04.taobaocdn.com/tps/i4/T134gxXnFdXXblQ4v1-696-338.jpg">
+		</div>
+	</div>
+</body>
+
+<script>
+(function(S) {
+	var S = KISSY,
+		D = S.DOM,
+		E = S.Event;
+	
+	S.add({
+        'custom-slide': {
+            fullpath:"slide.js",
+            cssfullpath:""
+        }
+    });
+    
+	// S.use('custom-slide', function(S) {
+		// var slide = new S.CustomSlide('#J_slide', {});
+	// });
+	S.ready(function(S) {
+		S.use('custom-slide', function(S, CS) {
+			var slide = new S.CustomSlide('#J_slide', {
+				dot: true
+			});
+		});
+	});
+	
+})(KISSY);
+</script>
+</html>
+
+
+
+
+
+
+
