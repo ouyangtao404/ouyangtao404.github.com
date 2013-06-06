@@ -41,6 +41,6 @@
     }());
     
     </script>
-    
+    <script src="http://s9.cnzz.com/stat.php?id=5403719&web_id=5403719&show=pic" language="JavaScript"></script>
 </body>
 </html>
