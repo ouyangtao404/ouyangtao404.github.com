@@ -18,7 +18,7 @@
 			</div>
 			<!-- ENDS social -->
 			
-			<div id="footer-bottom" style="display:none;">ouyangtao.github.com</div>
+			<div id="footer-bottom" style="display:none;">ouyangtao.github.com-a</div>
 		
 		</div><!-- ENDS wrapper -->
 	</footer>
